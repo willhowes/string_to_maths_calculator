@@ -1,0 +1,30 @@
+don't be afraid to take a while refactoring
+
+red-green should only take a minute or two - solve the quickest way possible
+
+- quality coding is in the refactor stage
+
+- main issue syntax. understanding ruby better
+
+- to enable powerful refactors need to understand the language better
+
+- when lots of ifs statements:
+-- identify all the lines are the same above any lines that are different
+--
+
+- every time we add a new test there will usually be a new refactor that needs
+to be done
+
+- If we don't regularly refactor then we have to do a long refactor
+- Ask yourself: is there a better way to code this? Criticise your code - review it.
+
+
+-------------
+Django framework for python (full stack)
+- Java for back end ( a 'C type' language)
+- Web - React, Angular, Django, Rails
+- IoT - C,
+- Web - exploding! egs: MERN (react) - MEAN (angular)
+- backend - python, java, C++
+- data science
+- BUT MAIN ADVICE: KEEP CODING! And yes do a project.
