@@ -27,9 +27,9 @@ def maths_evaluator(sum_as_string)
   when '/'
     raise ZeroDivisionError if first_number == 0 || second_number == 0
     result = first_number / second_number
-    
+
   else
-    result = sum_as_string.to_i
+    result = sum_as_string.to_f
   end
 
   return ["#{sum_as_string}", result]
