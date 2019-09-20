@@ -28,4 +28,8 @@ describe '#maths_evaluator' do
   it "returns '["", 0]' when given a blank string" do
     expect(maths_evaluator("")).to eq(["", 0])
   end
+
+  it "returns '['1', 1] for an input of '1'" do
+    expect(maths_evaluator('1')).to eq(['1', 1])
+  end
 end

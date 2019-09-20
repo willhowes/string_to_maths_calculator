@@ -17,6 +17,8 @@ def maths_evaluator(sum_as_string)
 
   when '/'
     result = split_sum[0].to_i / split_sum[2].to_i
+  else
+    result = sum_as_string.to_i
   end
   return ["#{sum_as_string}", result]
 end
