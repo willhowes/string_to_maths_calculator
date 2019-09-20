@@ -17,7 +17,11 @@ describe '#maths_evaluator' do
     expect(maths_evaluator("2 - 1")).to eq(['2 - 1', 1])
   end
 
-  it "Returns '[2 * 1, 2]' for an input of ' 2 * 1'" do
+  it "Returns '[2 * 1, 2]' for an input of '2 * 1'" do
     expect(maths_evaluator("2 * 1")).to eq(['2 * 1', 2])
+  end
+
+  it "Returns '[25 / 5, 5]' for an input of '25 / 5'" do
+    expect(maths_evaluator("25 / 5")).to eq(['25 / 5', 5])
   end
 end
