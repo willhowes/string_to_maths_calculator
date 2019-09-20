@@ -1,0 +1,28 @@
+Academic maths papers easier to read
+scans through maths papers
+looking for sums
+extracts the sums as strings
+pass string to me and I will evaluate the expression
+return the original string and the evaluated results in an array
+first element in array the original sum, the second the result.
+
+INPUT: string "1 + 1"
+OUTPUT: array ["1 + 1", 2]
+
+plus, minus, divide, muliply +, -, /, *
+
+edge cases:
+Input: Empty string: ""
+Output: ["", 0]
+
+sngle numbers
+INput: "1"
+Output: ["1", 1]
+
+negative nos:
+input "1.5 * -1"
+output ["1.5 * -1", -1.5]
+
+can't divide by zero
+input: "5 / 0"
+ouput: ErrorType: Zero division error. message: "Divided by zero"
