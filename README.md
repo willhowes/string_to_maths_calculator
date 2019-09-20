@@ -34,4 +34,4 @@ output ["1.5 * -1", -1.5]
 
 - can't divide by zero
 input: "5 / 0"
-ouput: ErrorType: Zero division error. message: "Divided by zero"
+ouput: ErrorType: Zero division error. message: "Cannot divide by zero"

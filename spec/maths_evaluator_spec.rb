@@ -38,6 +38,6 @@ describe '#maths_evaluator' do
   end
 
   it 'Throws an erro if you try to divide by 0' do
-    expect{ maths_evaluator('5 / 0') }.to raise_error('Divided by zero')
+    expect{ maths_evaluator('5 / 0') }.to raise_error('Cannot divide by zero')
   end
 end

@@ -1,5 +1,11 @@
-def maths_evaluator(sum_as_string)
+class ZeroDivisionError < StandardError
+  def initialize(msg="Cannot divide by zero", exception_type="custom")
+    @exception_type = exception_type
+    super(msg)
+  end
+end
 
+def maths_evaluator(sum_as_string)
   return ["", 0] if sum_as_string.empty?
 
   split_sum = sum_as_string.split(' ')
@@ -19,10 +25,12 @@ def maths_evaluator(sum_as_string)
     result = first_number * second_number
 
   when '/'
-    raise 'Divided by zero' if first_number == 0 || second_number == 0
+    raise ZeroDivisionError if first_number == 0 || second_number == 0
     result = first_number / second_number
+    
   else
     result = sum_as_string.to_i
   end
+
   return ["#{sum_as_string}", result]
 end
