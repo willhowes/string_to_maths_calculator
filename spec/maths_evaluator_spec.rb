@@ -2,27 +2,27 @@ require 'maths_evaluator'
 
 describe '#maths_evaluator' do
   it "Returns '[1 + 1, 2]' for an input of '1 + 1'" do
-    expect(maths_evaluator("1 + 1")).to eq (["1 + 1", 2])
+    expect(maths_evaluator('1 + 1')).to eq (['1 + 1', 2])
   end
 
   it "Returns '[1 + 2, 3]' for an input of '1 + 2'" do
-    expect(maths_evaluator("1 + 2")).to eq(["1 + 2", 3])
+    expect(maths_evaluator('1 + 2')).to eq(['1 + 2', 3])
   end
 
   it "Returns '[1 - 1, 0]' for an input of '1 - 1'" do
-    expect(maths_evaluator("1 - 1")).to eq(['1 - 1', 0])
+    expect(maths_evaluator('1 - 1')).to eq(['1 - 1', 0])
   end
 
   it "Returns '[2 - 1, 1]' for an input of '2 - 1'" do
-    expect(maths_evaluator("2 - 1")).to eq(['2 - 1', 1])
+    expect(maths_evaluator('2 - 1')).to eq(['2 - 1', 1])
   end
 
   it "Returns '[2 * 1, 2]' for an input of '2 * 1'" do
-    expect(maths_evaluator("2 * 1")).to eq(['2 * 1', 2])
+    expect(maths_evaluator('2 * 1')).to eq(['2 * 1', 2])
   end
 
   it "Returns '[25 / 5, 5]' for an input of '25 / 5'" do
-    expect(maths_evaluator("25 / 5")).to eq(['25 / 5', 5])
+    expect(maths_evaluator('25 / 5')).to eq(['25 / 5', 5])
   end
 
   it "returns '["", 0]' when given a blank string" do
@@ -37,7 +37,7 @@ describe '#maths_evaluator' do
     expect(maths_evaluator('1.5 * -1')).to eq(["1.5 * -1", -1.5])
   end
 
-  it 'Throws an erro if you try to divide by 0' do
+  it 'Throws an error if you try to divide by 0' do
     expect{ maths_evaluator('5 / 0') }.to raise_error('Cannot divide by zero')
   end
 end
