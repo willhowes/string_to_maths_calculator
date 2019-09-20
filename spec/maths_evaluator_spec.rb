@@ -16,4 +16,8 @@ describe '#maths_evaluator' do
   it "Returns '[2 - 1, 1]' for an input of '2 - 1'" do
     expect(maths_evaluator("2 - 1")).to eq(['2 - 1', 1])
   end
+
+  it "Returns '[2 * 1, 2]' for an input of ' 2 * 1'" do
+    expect(maths_evaluator("2 * 1")).to eq(['2 * 1', 2])
+  end
 end
