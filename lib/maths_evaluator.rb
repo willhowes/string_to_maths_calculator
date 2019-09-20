@@ -4,19 +4,22 @@ def maths_evaluator(sum_as_string)
 
   split_sum = sum_as_string.split(' ')
 
+  first_number = split_sum[0].to_f
+  second_number = split_sum[2].to_f
+
   case split_sum[1]
 
   when '+'
-    result = split_sum[0].to_i + split_sum[2].to_i
+    result = first_number + second_number
 
   when '-'
-    result = split_sum[0].to_i - split_sum[2].to_i
+    result = first_number - second_number
 
   when '*'
-    result = split_sum[0].to_i * split_sum[2].to_i
+    result = first_number * second_number
 
   when '/'
-    result = split_sum[0].to_i / split_sum[2].to_i
+    result = first_number / second_number
   else
     result = sum_as_string.to_i
   end

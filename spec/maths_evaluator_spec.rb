@@ -32,4 +32,8 @@ describe '#maths_evaluator' do
   it "returns '['1', 1] for an input of '1'" do
     expect(maths_evaluator('1')).to eq(['1', 1])
   end
+
+  it 'Handles negative numbers correctly' do
+    expect(maths_evaluator('1.5 * -1')).to eq(["1.5 * -1", -1.5])
+  end
 end
