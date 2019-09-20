@@ -24,4 +24,8 @@ describe '#maths_evaluator' do
   it "Returns '[25 / 5, 5]' for an input of '25 / 5'" do
     expect(maths_evaluator("25 / 5")).to eq(['25 / 5', 5])
   end
+
+  it "returns '["", 0]' when given a blank string" do
+    expect(maths_evaluator("")).to eq(["", 0])
+  end
 end

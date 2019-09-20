@@ -1,4 +1,7 @@
 def maths_evaluator(sum_as_string)
+
+  return ["", 0] if sum_as_string.empty?
+
   split_sum = sum_as_string.split(' ')
 
   case split_sum[1]
