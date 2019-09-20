@@ -36,4 +36,8 @@ describe '#maths_evaluator' do
   it 'Handles negative numbers correctly' do
     expect(maths_evaluator('1.5 * -1')).to eq(["1.5 * -1", -1.5])
   end
+
+  it 'Throws an erro if you try to divide by 0' do
+    expect{ maths_evaluator('5 / 0') }.to raise_error('Divided by zero')
+  end
 end

@@ -19,6 +19,7 @@ def maths_evaluator(sum_as_string)
     result = first_number * second_number
 
   when '/'
+    raise 'Divided by zero' if first_number == 0 || second_number == 0
     result = first_number / second_number
   else
     result = sum_as_string.to_i
